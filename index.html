@@ -2,15 +2,22 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta http-equiv="refresh" content="600">
+    <title>TIVO DASHBOARD</title>
+    <style>
+      iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
-    <h1>TIVO DASHBOARD</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <iframe src="https://app.powerbi.com/reportEmbed?reportId=70e1c228-3671-4f7e-8441-57ed6c3b8ff6&autoAuth=true&ctid=77117b2a-ecb4-4e42-abb0-de5f657f769e" frameborder="0" width="auto" height="auto"></iframe>
+    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMTM5YzFlMjItM2RkYi00NjZkLWI2ZjctNzc5ODBiODcwNGU1IiwidCI6Ijc3MTE3YjJhLWVjYjQtNGU0Mi1hYmIwLWRlNWY2NTdmNzY5ZSIsImMiOjl9" frameborder="0"></iframe>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
