@@ -4,9 +4,11 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "build --win",
+    "ship": "build --win -p always"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/MartinsTivo/TIVO_Dashboard.git",
   "keywords": [
     "Electron",
     "quick",
@@ -17,6 +19,11 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.2"
+    "electron": "^5.0.2",
+    "electron-builder": "^20.41.0"
+  },
+  "dependencies": {
+    "electron-updater": "^4.0.6",
+    "path": "^0.12.7"
   }
 }
